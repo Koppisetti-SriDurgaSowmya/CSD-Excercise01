@@ -23,9 +23,19 @@ import unittest
 # Implement the below function and run this file
 # Return the output, No need read input or print the ouput
 
-
 def connell_sequence(n):
-    pass
+    l=[]
+    s=0
+    for i in range(n+1):
+        s=s+1
+        for j in range(i+1):
+            l.append(s)
+            if j!=i:
+                s=s+2
+        if len(l)>=n+1:
+            break
+    return l[n]
+
 
 
 # DO NOT TOUCH THE BELOW CODE

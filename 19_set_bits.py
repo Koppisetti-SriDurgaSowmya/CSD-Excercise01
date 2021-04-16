@@ -44,7 +44,16 @@ import unittest
 
 
 def set_bits(n):
-    pass
+    c=0
+    for i in range(n+1):
+        if '1' in str(bin(i)[2:]):
+            for i in sorted(str(bin(i)[2:]),reverse=True):
+                if i=='1':
+                    c=c+1
+                else:
+                    break
+    return c
+
 
 
 # DO NOT TOUCH THE BELOW CODE

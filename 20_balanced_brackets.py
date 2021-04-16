@@ -50,7 +50,19 @@ import unittest
 
 
 def balanced_brackets(sentence):
-    pass
+    c=0
+    if sentence.startswith(")"):
+        return False
+    for i in sentence:
+        if i=="(":
+            c=c+1
+        elif i==")":
+            c=c-1
+    if c==0:
+        return True
+    else:
+        return False
+
 
 
 # DO NOT TOUCH THE BELOW CODE

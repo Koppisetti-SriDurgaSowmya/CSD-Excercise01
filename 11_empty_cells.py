@@ -30,7 +30,11 @@ import unittest
 
 
 def empty_cells(n):
-    pass
+    if n%2==0:
+        return n*n-n*2
+    else:
+        return n*n-n*2+1
+
 
 
 # DO NOT TOUCH THE BELOW CODE

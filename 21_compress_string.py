@@ -25,7 +25,12 @@ import unittest
 
 
 def compress_string(s):
-    pass
+    l=[s[0]]
+    for i in range(1,len(s)):
+        if s[i-1]!=s[i]:
+            l.append(s[i])
+    return "".join(l)
+
 
 
 # DO NOT TOUCH THE BELOW CODE

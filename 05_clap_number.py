@@ -23,7 +23,14 @@ Explanation:
 # Implement the below function and run the program
 
 def clap_number(n):
-    pass
+    clap = list()
+    for i in range(1,n+1):
+        if i%3==0 or '3' in str(i) or '6' in str(i)or '9' in str(i) :
+            clap.append('clap')
+        else:
+            clap.append(str(i))
+    return clap
+
 
 
 class TestClapNumber(unittest.TestCase):

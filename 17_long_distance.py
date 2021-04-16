@@ -42,7 +42,12 @@ import unittest
 
 
 def long_distance(lst):
-    pass
+    l=[]
+    for i in lst:
+        l.append(sorted(lst).index(i))
+        lst[lst.index(i)]=max(lst)
+    return l
+
 
 
 # DO NOT TOUCH THE BELOW CODE

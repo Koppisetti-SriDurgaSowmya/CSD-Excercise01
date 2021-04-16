@@ -39,7 +39,10 @@ import unittest
 
 
 def dot_product(list1, list2):
-    pass
+    d=0
+    for i in range(len(list1)):
+        d = d+ list1[i]*list2[i]
+    return d
 
 
 # DO NOT TOUCH THE BELOW CODE

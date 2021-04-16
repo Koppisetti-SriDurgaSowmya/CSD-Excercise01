@@ -25,7 +25,25 @@ import unittest
 
 
 def even_odd_sort(nums):
-    pass
+    even=list()
+    odd=list()
+    for i in nums:
+        if i%2==0:
+            even.append(i)
+            even = sorted(even)
+        else:
+            odd.append(i)
+            odd = sorted(odd,reverse = True)
+    result=list()
+    for i in nums:
+        if i%2==0:
+            result.append(even[0])
+            even.pop(0)
+        else:
+            result.append(odd[0])
+            odd.pop(0)
+    return result
+
 
 
 # DO NOT TOUCH THE BELOW CODE

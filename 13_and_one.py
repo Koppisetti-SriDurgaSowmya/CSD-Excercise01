@@ -30,7 +30,11 @@ import unittest
 
 
 def and_one(nums):
-    pass
+    s="".join(list(map(str,nums)))
+    l=[]
+    for i in str(int(s)+1):
+        l.append(int(i))
+    return l
 
 
 # DO NOT TOUCH THE BELOW CODE

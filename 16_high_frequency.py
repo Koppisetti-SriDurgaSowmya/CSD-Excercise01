@@ -35,7 +35,14 @@ import unittest
 
 
 def high_frequency(nums):
-    pass
+    d=dict()
+    l=list()
+    for i in nums:
+        d[i]=d.get(i,0)+1
+    for k,v in d.items():
+        l.append((v,k))
+    l = sorted(l, reverse=True)
+    return l[0][0]
 
 
 # DO NOT TOUCH THE BELOW CODE

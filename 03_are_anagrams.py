@@ -31,7 +31,13 @@ False
 # Implement the below function and run the program
 
 def are_anagrams(word1, word2):
-    pass
+    for i in word1:
+        if i not in word2:
+            return False
+    for i in word2:
+        if i not in word1:
+            return False
+    return True
 
 
 class TestAreAnagrams(unittest.TestCase):
